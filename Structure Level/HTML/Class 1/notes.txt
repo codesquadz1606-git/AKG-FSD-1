@@ -1,0 +1,8 @@
+HTML : Hypertext Markup Language. Where we have some pre-defined tags & we use that for creating the structure of our web page/ website.
+
+How we can create HTML page?
+
+Why We use meta tags?
+--> For encoding(UTF-8) the Ascii level or any entity level to our webpage.
+--> FOR SEO (Search Engine Optimisation)
+--> For Responsive design.
