@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <marquee scrollamount="60" behavior="alternate" direction="">
+        <h1>Hello</h1>
+    </marquee>
+
+    <hr>
+
+    <h1>Table tag</h1>
+    <table border="1" cellspacing="0" cellpadding="50">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>AKG1234</td>
+            <td>Vishwas Srivastava</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>AKG1235</td>
+            <td>Nitin Chaudhary</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>AKG1236</td>
+            <td>Kamal Singh</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Form Tag</h1>
+    <!-- 
+        form tag,
+        label tag : all titles are here
+        input tag : text , number , date.....
+        select tag -- option tag : Dropdown
+        textarea : Feedbacks 
+        submit : for submitting the form
+        file :  for uploading the file
+        fieldset : Outside borders of a form
+        legend : Title of a form
+    -->
+
+    <form action="" align="center">
+        <fieldset>
+            <legend align="center">
+                <h1>Registration Form</h1>
+            </legend>
+            <label for="">Roll No : </label>
+            <input type="number">
+            <br>
+            <label for="">Student Name</label>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <br>
+            <label for="">Father's Name : </label>
+            <input type="text">
+            <br>
+            <label for="">Date of Birth : </label>
+            <input type="date">
+            <br>
+            <label for="">Phone No : </label>
+            <input type="number">
+            <br>
+            <label for="">Email :</label>
+            <input type="email">
+            <br>
+            <label for="pass">Password : </label>
+            <input type="password" id="pass">
+            <br>
+            <label for="">Gender : </label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <br>
+            <label for="">Department :</label>
+            <input type="checkbox">CSE
+            <input type="checkbox">IT
+            <input type="checkbox">ECE
+            <input type="checkbox">CIVIL
+            <input type="checkbox">MECH
+            <br>
+            <label for="">Course : </label>
+            <select name="" id="">
+                <option value="">---------Select Current Course---------</option>
+                <option value="">CSE</option>
+                <option value="">IT</option>
+                <option value="">Civil</option>
+                <option value="">ECE</option>
+            </select>
+            <br>
+            <label for="">Student Photo :</label>
+            <input type="file">
+            <br>
+            <label for="">City : </label>
+            <input type="text">
+            <br>
+            <label for="">Address : </label>
+            <textarea name="" id=""></textarea>
+            <br>
+            <input type="submit" value="Register">
+            <input type="reset">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <h1>HTML Entity</h1>
+    &lt;&gt; &amp; &copy; &reg; <br>
+    hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;everyone <br>
+    &#128512;
+    &#128526;
+    <br>
+    &lt; HTML &gt;
+</body>
+
+</html>
