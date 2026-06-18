@@ -1,0 +1,23 @@
+We have completed Level 1 of Structure : HTML
+Now we will start Styling Structure : CSS
+
+What is CSS?
+CSS stands for Cascading StyleSheet
+
+selector_name{
+    property_name : property_value.
+}
+
+Type of CSS :
+--> Inline : Within a HTML tag
+--> Internal : We will write css within HTML file.
+--> External : We have to make an external css file for this.
+
+CSS Selectors : 4 selectors 
+universal : It means overall HTML, it is denoted by *
+
+id : It is used for unique styling , We cannot reuse any id. It is denoted by #
+
+class : It is used for common styling , can be reuse as much as you want. It is denoted by .
+
+tagname : It will apply ccss to all the tags present in apage. It is denoted by tag name itself.
