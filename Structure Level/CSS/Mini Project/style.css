@@ -1,0 +1,72 @@
+/* 
+    Flexbox
+    Grid
+    Pseudo-Classes
+    Animations
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --indigo : #4f46e5;
+    --indigo-dark : #4338ca;
+    --amber : #f59e0b;
+    --ink : #1e1b2e;
+    --muted : #6b7280;
+    --bg : #ffff;
+    --bg-soft : #f5f5fb;
+    --line : #e5e7eb;
+    --radius : 16px;
+    --shadow: 0 12px 30px rgba(30,27,46,0.08);
+}
+
+.hero-blob{
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(135deg , var(--indigo) , var(--amber));
+    filter:blur(8px);
+    opacity: 0.9;
+    border-radius: 42% 50% 63% 37%;
+
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-card{
+    position: absolute;
+    background-color: #fff;
+    padding: 14px 18px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    z-index: 2;
+
+    animation: float 6s ease-in-out infinite;
+}
+
+.card-1{
+    top: 20px;
+    left: 30px;
+    animation-delay: 0s;
+}
+.card-2{
+    top: 150px;
+    left: 250px;
+    animation-delay: 0s;
+}
+.card-3{
+    top: 230px;
+    left: 30px;
+    animation-delay: 0s;
+}
+
+
+@keyframes float {
+    0% , 100% {transform: translateY(0px);}
+    50% {transform: translateY(-16px);}
+}
+
+
