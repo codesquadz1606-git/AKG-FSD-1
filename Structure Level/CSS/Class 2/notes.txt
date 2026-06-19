@@ -30,8 +30,3 @@ FlexBox ,
 
 Animation ,
 
-Tomorrow Session
-Media Query ,
-Grid ,
-Pseudo Classes & Variables
-Web Page Building (Responsive website)

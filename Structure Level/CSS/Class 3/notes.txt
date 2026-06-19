@@ -1,0 +1,25 @@
+Media Query ,
+    Media Query is a way to build dynamic & responsive web site.
+    >1920 px : Big screen
+    1440px to 1920px : Big screen
+    1280px to 1439px : 13.6inch laptops
+    768px to 1279px : Tablet
+    440px to 767px : Phones
+
+Grid ,
+    In Grid we apply elements in two - Dimensional
+    grid-template-columns
+    grid-template-rows
+
+    grid-repeat
+
+Pseudo Classes & Variables
+    To provide an additional property to an element.
+    :hover -- transition : alWhichProperty time timing_function;
+
+    :first-Child
+    :last-child
+
+    :nth-child
+
+Web Page Building (Responsive website)
