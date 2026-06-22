@@ -1,0 +1,32 @@
+Why we use this framework?
+To work faster
+To work in structure
+
+These are the utility classes which are pre-defined & can be used multiple times.
+
+what are the the grades : (50,100,200,300,400,500,600,700,800,900,950)
+background-color : bg-colorName-grade
+text color : text-colorName-grade
+text-size : text-[size] / text-sm to 9xl
+
+Box Model
+padding : p pt(padding top) , pb (padding bottom) ps pe
+margin : m mt(margin top) mb(margin bottom) ms me
+
+Dimensions
+width : w-[dimensions]
+height : h-[dimensions]
+
+Border-radius : rounded-[number]
+
+flex  
+    flex
+    flex-row/col
+    gap-number
+    align-center
+
+sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... }
