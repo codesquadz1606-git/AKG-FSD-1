@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inline JS -->
+    <button onclick="console.log('Button Clicked')">Click Here</button>
+
+    <script>
+        // Internal JS
+
+        // How to create the variable?
+        // name="Ayush";
+
+        // Keyword : let var & const
+
+        // let a=10; // declare
+        // console.log(a)
+        
+        // let a=100; // error : because in let keyword we cannot re-declare any value.
+        // a=100; //no error: because we can re-assign
+        // console.log(a)
+
+
+        // var a=100;
+        // console.log(a);
+
+        // var a=200; // no error : because it can re-declare as well as re-assign the value to the variable.
+        // console.log(a);
+
+        // const a=100;
+        // console.log(a)
+
+        // const a=200; // error: cannot be re-declare .
+        // a=200; // error: also cannot be re-assign.
+
+        // Data Types
+        // let a=10;
+        // let b=19.5;
+
+        // console.log(typeof(a))
+        // console.log(typeof(b))
+
+        // let c="Ayush@1234"
+        // console.log(typeof(c))
+
+        // let d=true;
+        // console.log(typeof(d))
+
+        // let e;
+        // console.log(typeof(e))
+
+        // let f=null;
+        // console.log(typeof(f));
+
+        // console.log(a+b)
+        // console.log(a-b)
+        // console.log(a*b)
+        // console.log(a/b) // Quotient
+        // console.log(a%b) // Remainder
+        // console.log(a**b)
+
+        // console.log(a<b)
+        // console.log(a>b)
+        // console.log(a>=b)
+        // console.log(a<=b)
+        // console.log(a==b)
+        // console.log(a!=b)
+
+        // let num1=10
+        // let num2="10";
+        
+        // console.log("== : ",num1==num2) // that only compares the value.
+        // console.log("=== : ",num1===num2) // that compares value as well as type.
+
+        // let num1=10
+        // let num2=20;
+        // let num3=21;
+
+        // console.log(num1<num2 && num2>num3); // false
+        // console.log(num1<num2 || num2>num3); // true
+        // console.log(!(num1<num2 || num2>num3));
+
+
+        // let a=10;
+        // let b=a++; // Post Increment : It will increase after assigning
+
+        // let b=a--; // Post Decrement
+
+        // let b=++a; // it will first increase then assign.
+        // let b=--a; // it will first decrease then assign.
+
+        // console.log(a)
+        // console.log(b)
+
+
+        // a+=20 // a=a+20
+        // console.log(a)
+
+        // Terary Operator
+        let age=15;
+        (age>19)?console.log("Eligible"):console.log("Not Eligble");
+    </script>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
