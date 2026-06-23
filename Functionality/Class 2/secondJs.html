@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // FOr user-input we use : prompt()
+        // Prompt() by default delivers the string value
+        
+        // Typecasting : COnverting the type of a variable.
+        // parseInt() : for converting into integer
+        // parseFloat() : for converting into decimal value.
+
+        // let a=parseInt(prompt("Enter a"))
+        // let b=parseInt(prompt("Enter b"))
+
+        // Template literal : in ES6
+
+        // console.log("Sum of",a,"&",b,"is",a+b);
+        // console.log(`Sum of ${a} & ${b} is ${a+b}`)
+
+        // if & else
+        // if is the staring statement , if can be used multiple times.
+        // else is the ending statement , ele is used only single time.
+
+        // let age=parseInt(prompt("Enter your age"))
+
+        // if(age>=19){ // Starting Statement
+        //     console.log("Eligible to Vote")
+        // }
+
+        // if(age>=14 && age<=18){ // Starting Statement
+        //     console.log(`Eligible in ${19-age} years.`)
+        // }
+
+        // else if(age>=14 && age<=18){ // Additional Statement
+        //     console.log(`Eligible in ${19-age} years.`)
+        // }
+        // else{
+        //     console.log("Not Eligible")
+        // }
+
+        // Switch Case
+        // Their is one expression and each expression has multiple cases.
+
+        // buttonPressed : 
+            // Press 1 for React
+            // Press 2 for Node
+            // Press 3 for Express
+            // Press 4 for Mongodb
+
+        // let buttonPressed=parseInt(prompt("Press any button for output"))
+
+        // switch(buttonPressed){
+        //     case 1 : console.log("React")
+        //     break; // it used to break after case is meet
+        //     case 2 : console.log("Node")
+        //     break; // it used to break after case is meet
+        //     case 3 : console.log("Express")
+        //     break; // it used to break after case is meet
+        //     case 4 : console.log("MongoDb")
+        //     break; // it used to break after case is meet
+        //     default : console.log("No Case found at this button")
+        // }
+
+        // for loop
+        // for(let i=1;i<=20;i++){
+        //     console.log(i)
+        // }
+        // console.log("Loop Finished")
+
+        // while loop
+        // let i=0;
+        // while(i<=20){
+        //     console.log(i)
+        //     i+=2; // 2 4 6 8
+        // }
+
+        // do-while loop
+        // let i=1;
+        // do{
+        //     if(i%2==0){
+        //         console.log(i)
+        //     }
+        //     i++;
+        // }while(i<=20)
+
+        // let name="Ayush"; // iteration on a string
+        // for(let char of name){
+        //     console.log(char)
+        // }
+
+        // let arr=["one","two","three","four","five"];
+        // for(let item of arr){
+        //     console.log(item);
+        // }
+
+        // Functions
+        // function greet(){
+        //     console.log("Hello Everyone");
+        // }
+
+        // greet();
+        
+        // Parameter & Arugment
+        // Parameter are the variable that are declared in the scope of function.
+
+        // Argument is the value that is passed for the parameter is function scope
+
+        // function add(a,b){ // parameters
+        //     console.log(a+b)
+        // }
+
+        // add(10,20) // arguments
+
+        // return value function
+        // function add(a,b){ // parameters
+        //     // console.log(a+b)
+        //     return a+b // this value is returning to the function
+        // }
+
+        // console.log(add(10,20))
+
+        // Default value function
+        // function info(fname,lname="Srivastava"){
+        //     console.log(fname,lname)
+        // }
+
+        // info("Kartik")
+        // info("Himanshu")
+        // info("Sumit","Yadav") // here the lname has overlapped the default value .
+
+        // Function Expression
+        // let product=function(a,b){
+        //     console.log(a*b)
+        // }
+
+        // product(12,3)
+
+        // Arrow Functions
+        let product=(a,b)=>{
+            console.log(a*b)
+        }
+
+        product(98,7)
+    </script>
+</body>
+</html>
