@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let name="Ayush"
+        // console.log(typeof(name));
+
+        // It is zero based indexing.
+        // That count starts from 0 & goes till length-1.
+
+        // console.log(name.length)
+
+        // console.log(name[0])
+        // console.log(name[1])
+        // console.log(name[2])
+        // console.log(name[3])
+        // console.log(name[4])
+
+        // slice(startidx,(end-1)idx) , toUpperCase , toLowerCase , startsWith() , endsWith() , trim()
+
+        // console.log(name.slice(0,3))// cuts the string into small peices.
+        // console.log(name.toUpperCase())
+        // console.log(name.toLowerCase())
+
+        // console.log(name.startsWith("a")) // it identify that from which character it gets start.
+
+        // console.log(name.endsWith("i"))// it identify that from which character it gets end.
+
+        // split() : It breaks the string into the array.
+        // console.log(name.split(""))
+
+        // let info="Ayush-Noida-Codesquadz"
+        // console.log(info.split("-"))
+
+        let arr=[10,20,"Ayush",true,undefined,null]
+
+        console.log(arr)
+
+        // // push , pop , shift , unshift
+        // arr.push(1000); // add the element from the end
+        // arr.pop(); // remove the element from the end.
+        // arr.shift() // remove from, the starting
+        // arr.unshift(2000); // add from the starting.
+        // console.log(arr)
+
+        // splice(startIdx,deleteCount,elementsToAdd....) : If we want to remove the middle.
+        // arr.splice(1,3,"Jatin","Harshit")
+        // console.log(arr)
+
+        // sort , reverse , concat , slice , join
+        // console.log(arr.sort())
+        // console.log(arr.sort().reverse()) // Method Chaining
+
+        let newArr=[100,200,300,400,500,600]
+        let combineArr=arr.concat(newArr)
+        console.log(combineArr)
+
+        // console.log(combineArr.slice(0,5))
+
+        // join(): to combine arr in to the string
+        // console.log(combineArr.join())
+
+        // map(callback) , filter(callback) , reduce(callback) , spread&rest
+
+        // What is this callback?
+        // Callback is a function inside another function waitng for execution
+
+        // map() : It map all the elements.
+        // combineArr.map((el)=>{
+        //     console.log(el+5)
+        // })
+
+        // Filter() : It filter outs the match element.It returns an array.
+        // let nums=[10,12,32,31,33,35,90,86,73];
+        // // let filteredNum=nums.filter((el)=>el%2==0)
+        // let filteredNum=nums.filter((el)=>{
+        //     return el%2==0
+        // })
+        // console.log(filteredNum)
+
+        // reduce() : It reduces the array into the single value.
+        // let sum=nums.reduce((acc,el)=>{
+        //     acc=acc+el
+        //     return acc;
+        // },0)
+
+        // console.log(sum)
+
+        // Spread & Rest are written as ...
+        // let copy=[...nums,"Vishwas","Noor"]
+        // console.log(copy)
+
+        // // rest is used for multiple parameters
+        // function nums1(...args){ // it can take multiple arguments & will convert this into the array.
+        //     console.log(args)
+        // }
+
+        let obj={
+            name:"Ayush",
+            age:25
+        }
+        console.log(obj)
+
+
+        // Method 1: using .keyname
+        // Method 2: using [keyname]
+
+        console.log(obj.name)
+
+        console.log(obj["age"])
+
+        delete obj.age
+
+        console.log(obj)
+
+        // If we want to add any key to the object
+        // .keyname/["keyname"]=value
+
+        obj.city="Noida" // this is added
+        obj.name="Ansh" // this is updated.
+        console.log(obj)
+
+        let newObj={
+            name:"Jatin",
+            skills:{
+                skill1:"React",
+                skill2:"Node",
+                skill3:"Express"
+            }
+        }
+
+        console.table(newObj)
+        console.log(newObj.skills.skill3)
+    </script>
+</body>
+</html>
