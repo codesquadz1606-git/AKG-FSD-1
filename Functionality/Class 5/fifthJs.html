@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // API fetching.
+        // What is API?
+        // Application programming interface.
+
+        // youtube/ , youtube/shorts , youtube/studio : APIs
+
+        // Five methods
+        // 1. GET : For frontend
+        // 2. POST
+        // 3. PUT
+        // 4. PATCH
+        // 5. DELETE
+
+        // For api fetching we use fetch() method.
+        // let url="https://jsonplaceholder.typicode.com/posts";
+        
+        // fetch(url) // promise : then() & catch()
+        // .then((res)=>{
+        //     console.log(res)
+        //     return res.json() // promise
+        // })
+        // .then((data)=>{
+        //     console.log(data)
+        // })
+        // .catch((err)=>{
+        //     console.log(err)
+        // })
+
+        // async & await
+        // async : it converts any function into promise
+        // await : it is used to handle the promises, it is used only when top level has async function
+
+        async function dataFetch(){
+            let url="https://jsonplaceholder.typicode.com/posts";
+            let res=await fetch(url); // readable stream --> .json
+            let data=await res.json()
+
+            return data
+        }
+    </script>
+</body>
+</html>
