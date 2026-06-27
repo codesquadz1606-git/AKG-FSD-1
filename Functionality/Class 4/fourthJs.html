@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // Destructuring of array & objects
+        // let arr=["Ayush","Noida","Codesquadz","React", "Node" ,"Typescript"];
+
+        // Destructure of an array : []
+        // let [name,city,company,...technology]=arr; // yahan pa rest use huaa h.
+        // console.log(name)
+        // console.log(city)
+        // console.log(company)
+        // console.log(technology)
+
+        // Destructure of an object : {}
+        // let obj={
+        //     name:"Ayush",
+        //     city:"Mumbai",
+        //     company:"Appsquadz",
+        //     native:"Noida"
+        // }
+
+        // In object destructuring it destructure according to their keyname.
+        // let {name,city,...others}=obj // yahan pa jo rest use huaa h , woh ek object mae key value pair ko bind kar degaa.
+        // console.log(name)
+        // console.log(city)
+        // console.log(others)
+
+        // Deep copy & Shallow Copy : Most asked Question In Interview.
+
+        // For(Array)
+        // let arr=[10,20,30,40,50,[60,70,80]]
+        // let copy=arr; // this is copied on a reference. Not a correct way.
+        
+        // Shallow Copy;
+        // let copy=[...arr] // spread : Shallow Copy - It copies the array without any reference, but here only the first level is copied without reference, nested levels are copied on the reference.
+        // copy[3]=100;
+        // copy[5][1]=140
+
+        // Deep Copy: It copies the array without any references , either it is first level or nested levels.
+        // JSON.stringify() : Converting into the string
+        // JSON.parse(): Converting string into JSON.
+
+        // let copy= JSON.parse(JSON.stringify(arr))
+        // copy[3]=100;
+        // copy[5][1]=140
+
+        // console.log("Copy:",copy)
+        // console.log("Original:",arr)
+
+        // What is Asynchronous & Synchronous?
+        // Asynchronous means waiting period in a code.
+        // Promise , API calls , setTimeout(callback,delay), setInterval()
+
+        // setTimeout(callback,delay) : It will run after some time.
+
+        // console.log("Hello")
+        // setTimeout(()=>{ // Asynchrounous Programming
+        //     console.log("How are you?")
+        // },3000)
+        // console.log("Hii")
+
+        // setInterval(callback,time) : Will run on every interval.
+        // let id=setInterval(()=>{
+        //     console.log("Hello")
+        // },2000)
+
+        // Synchronous means executing line by line.
+        // console.log("Hello")
+        // console.log("Hii")
+        // console.log("How are you?")
+
+        // Is JS single threaded or multi-threaded?
+        // Js is single threaded all the asynchronous events are handled by the browser.
+
+        // What is promises?
+        // Promises are the way to handle the multiple callbacks.
+        // Here , we eliminate the callback hell.
+
+        // Promise : fullfill , rejection
+
+        // internetSpeed 
+        // function dataSave(data,success,failure){
+        //     let internetSpeed=Math.ceil(Math.random()*10)
+        //     if(internetSpeed>4){
+        //         success(internetSpeed)
+        //     }
+        //     else{
+        //         failure(internetSpeed)
+        //     }
+        // }
+
+        // Callback hell
+        // dataSave("Lokesh",(s)=>{ // success
+        //     console.log("Data 1 saved",s)
+        //     dataSave("Kishan",(s)=>{
+        //         console.log("Data 2 Saved",s)
+        //         dataSave("Kashish",(s)=>{
+        //             console.log("Data 3 Saved",s)
+        //         },(e)=>{
+        //             console.log("Less Internet Speed",e)
+        //         })
+        //     },(e)=>{
+        //         console.log("Less Internet Speed",e)
+        //     })
+        // },(e)=>{ // failure
+        //     console.log("Less Internet Speed",e)
+        // })
+
+        // Promises : Promises are handled by then & catch method
+        function dataSave(data){
+            return new Promise((res,rej)=>{
+                let internetSpeed=Math.ceil(Math.random()*10)
+                if(internetSpeed>4){
+                    res(internetSpeed)
+                }
+                else{
+                    rej(internetSpeed)
+                }
+            })
+        }
+
+        // then() is for success
+        // catch() is for failure
+        dataSave("Jatin") // promise
+        .then((s)=>{
+            console.log("Data 1 saved",s)
+            return dataSave("Ayush") // promise
+        })
+        .then((s)=>{
+            console.log("Data 2 Saved",s);
+        })
+        .catch((e)=>{
+            console.log("Less internet speed",e)
+        })
+    </script>
+</body>
+</html>
