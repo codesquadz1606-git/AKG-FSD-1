@@ -1,0 +1,42 @@
+React : It is library of JS
+
+Jsx : Javascript Extensible , where we write js in the HTML
+import : To access any component we build
+export : To export our component that other can use.
+
+What is components?
+Components are of two types:
+    1. Class Component : not more in use (it is very lengthy & hard to use.)
+    2. Functional Component : It is very short any easy to understand
+
+Component name must be start with Capital Letter.
+
+return( : here we return the UI from the component.
+    <>
+        Fragment tag
+    </>
+)
+
+Type of Exports:
+1. Default : It is only applied on a one component in a file
+2. Named : It can be multiple.
+
+Steps to create & use the component
+Step 1 : Create the .jsx file 
+Step 2 : Write functional component
+Step 3 : export that component
+Step 4 : Go to the file in which you have use the component & import thr component.
+
+How we can use Js in HTML?
+We use JS in html using {variable name}.
+
+Conditional Rendering : We return the output based on condition.
+Wrapper Component
+
+What are the pillars of React?
+React has 3 pillars:
+    i. State : Managing the data of a component.
+    ii. Props : Tranferruing data from parent component to child component
+    iii. Hooks : This is the features which helps us to create the optimised and scalable Application.
+
+Click Event : onClick()
