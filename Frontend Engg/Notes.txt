@@ -40,3 +40,25 @@ React has 3 pillars:
     iii. Hooks : This is the features which helps us to create the optimised and scalable Application.
 
 Click Event : onClick()
+
+Class 2 : Props , useEffect , Form Handling
+What is props ?
+Props means data transfer from parent to child component.
+
+What is useEffect()?
+It is a hook that handles the side effects of a page.
+Like api fetching, pagination ,....
+
+useEffect has 3 use case:
+    i. WIthout any dependency
+    ii. With empty array
+    iii. with dependency
+
+Syntax:
+    useEffect(callback,dependency);
+
+Form Handling
+    : Manual without using any of the packages
+    : Using Packages i.e React hook form
+
+    Interview : Controlled Statement & Uncontrolled Statement
