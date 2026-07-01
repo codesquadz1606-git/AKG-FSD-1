@@ -22,7 +22,7 @@ export function UseEffect() {
     //     console.log("Ist Use Case")
     // })
 
-    // Use case 2: With Empty Array : It will on run on the first render , & will not run on re-renders.
+    // Use case 2: With Empty Array : It will only run on the first render , & will not run on re-renders.
     // useEffect(()=>{
     //     console.log("IInd Use Case")
     // },[])

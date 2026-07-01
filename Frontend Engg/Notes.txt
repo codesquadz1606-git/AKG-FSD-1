@@ -62,3 +62,7 @@ Form Handling
     : Using Packages i.e React hook form
 
     Interview : Controlled Statement & Uncontrolled Statement
+
+Class 3 : Api Fetch , Routers 
+
+React Routing : npm i react-router-dom
