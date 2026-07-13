@@ -1,0 +1,7 @@
+files : How we can handle the files in the backend
+cloud storage : imagekit
+frontend & backend Connection : cors
+
+We will use postman to share the song one by one to our backend and will check whether it is getting stored in cloud or not.
+
+Later , we will reate an frontend from where we can share multiple data to our backend.
